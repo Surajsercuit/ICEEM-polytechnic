@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Faculty – ICEEM</title>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .faculty-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .faculty-card {
+            background-color: #f1f1f1;
+            padding: 15px;
+            width: 220px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .faculty-card img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .section-title {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">ICEEM</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collegeinfo.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="departments.html">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ourstaff.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reachus.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Faculty Section -->
+    <div class="container">
+        <h2 class="section-title">Meet Our Faculty's</h2>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <img src="Image/komal.jpg" alt="Komal Gadekar" />
+                <h6>Komal Gadekar (HOD)</h6>
+                <small>BE in Computer Science and Engineering</small>
+            </div>
+            <div class="faculty-card">
+                <img src="Image/oop.jpg" alt="Vaishnavi Shinde" />
+                <h6>Vaishnavi Shinde</h6>
+                <small>BE in Computer Science and Engineering</small>
+            </div>
+            <div class="faculty-card">
+                <img src="Image/java.jpg" alt="Varsha Mali" />
+                <h6>Varsha Mali</h6>
+                <small>BE in Computer Science and Engineering</small>
+            </div>
+            <div class="faculty-card">
+                <img src="Image/ui.jpg" alt="Rutuja Ganakwar" />
+                <h6>Rutuja Ganakwar</h6>
+                <small>BE in Computer Science and Engineering</small>
+            </div>
+            <div class="faculty-card">
+                <img src="https://i.ibb.co/8BvXVk7/teacher.jpg" alt="Tejaswi Dewkhar" />
+                <h6>Tejaswi Dewkhar</h6>
+                <small>PhD in English</small>
+            </div>
+            <div class="faculty-card">
+                <img src="Image/chavan.jpg" alt="Kiran Chavan" />
+                <h6>Kiran Chavan</h6>
+                <small>ME in Computer Science and Engineering</small>
+            </div>
+            <div class="faculty-card">
+                <img src="https://i.ibb.co/8BvXVk7/teacher.jpg" alt="Shital Dhahad" />
+                <h6>Shital Dhahad</h6>
+                <small>MSc in Mathematics</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        &copy; 2025 ICEEM College. All rights reserved.
+    </footer>
+
+</body>
+</html>

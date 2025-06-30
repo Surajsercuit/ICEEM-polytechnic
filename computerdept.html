@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computer Engineering – ICEEM</title>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .section-title {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+        }
+        .hod-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .hod-img {
+            border-radius: 15px;
+            width: 250px;
+            height: auto;
+        }
+        .hod-text {
+            flex: 1;
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .hod-heading {
+            background: linear-gradient(to right, #ff4e50, #f9d423);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .nav-tabs-box {
+            margin-top: 50px;
+            background-color: #6f42c1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .nav-tabs-box a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+            margin-right: 5px;
+            background-color: #5a32a3;
+            border-radius: 4px;
+        }
+        .nav-tabs-box a:hover {
+            background-color: #4a2594;
+        }
+        .lab-section, .faculty-section, .syllabus-section {
+            display: none;
+            margin-top: 40px;
+        }
+        .lab-card {
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .lab-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .faculty-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .faculty-card {
+            background-color: #f1f1f1;
+            padding: 15px;
+            width: 220px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .faculty-card img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .syllabus-section ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        .syllabus-box {
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+    </style>
+    <script>
+        function showLabs() {
+            document.getElementById("labSection").style.display = "block";
+            document.getElementById("facultySection").style.display = "none";
+            document.getElementById("syllabusSection").style.display = "none";
+        }
+
+        function showFaculty() {
+            document.getElementById("facultySection").style.display = "block";
+            document.getElementById("labSection").style.display = "none";
+            document.getElementById("syllabusSection").style.display = "none";
+        }
+
+        function showSyllabus() {
+            document.getElementById("syllabusSection").style.display = "block";
+            document.getElementById("labSection").style.display = "none";
+            document.getElementById("facultySection").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="bg-light border-bottom py-2">
+        <div class="container d-flex justify-content-between align-items-center small">
+            <span><strong>IIRW’s</strong> | NAAC Accredited</span>
+            <span>Email: <a href="mailto:website@iceemabad.com">website@iceemabad.com</a> | Call: 0240 2558 101</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">ICEEM</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="CollegeInfo.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Departments.html">Departments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="OurStaff.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ReachUs.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 text-primary fw-bold">Department of Computer Engineering</h2>
+
+        <!-- HOD Section -->
+        <div class="hod-card">
+            <div>
+                <img src="Image/komal.jpg" alt="HOD" class="hod-img" />
+                <p class="text-center mt-2"><strong>Komal Gadekar (HOD)</strong><br />Computer Science and Engineering (CSE)</p>
+            </div>
+            <div class="hod-text">
+                <div class="hod-heading">HOD Message</div>
+                <p>
+                    Welcome to the Department of Computer Engineering at ICEEM. Our department is committed to providing high-quality education in computing disciplines with a focus on academic excellence, innovation, and industry collaboration.
+                    We strive to shape students into professionals with deep technical knowledge, strong moral values, and leadership skills to compete at a global level.
+                </p>
+            </div>
+        </div>
+
+        <!-- Vision & Mission -->
+        <div class="mt-5">
+            <h4 class="section-title">Department Vision</h4>
+            <p>To produce globally competent and socially responsible computer engineers capable of contributing to the advancement of society through innovation and technical excellence.</p>
+
+            <h4 class="section-title mt-4">Department Mission</h4>
+            <ul>
+                <li>Provide quality education with strong academic foundations.</li>
+                <li>Promote research, development, and technical innovation.</li>
+                <li>Establish strong ties with industry for practical exposure.</li>
+                <li>Instill professional ethics and lifelong learning skills in students.</li>
+            </ul>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs-box mt-5">
+            <a href="javascript:void(0);" onclick="showLabs()">Labs</a>
+            <a href="javascript:void(0);" onclick="showFaculty()">Faculty</a>
+            <a href="javascript:void(0);" onclick="showSyllabus()">Syllabus</a>
+        </div>
+
+        <!-- Lab Section -->
+        <div id="labSection" class="lab-section">
+            <h4 class="section-title mt-5">Our Computer Labs</h4>
+            <div class="lab-card">
+                <h5>Software Lab</h5>
+                <img src="https://i.ibb.co/HzvYzpY/software-lab.jpg" alt="Software Lab">
+                <p>This lab is equipped with the latest software development tools and IDEs for hands-on experience in programming, web development, and software design.</p>
+            </div>
+            <div class="lab-card">
+                <h5>Hardware & Networking Lab</h5>
+                <img src="https://i.ibb.co/BCHSGxZ/hardware-lab.jpg" alt="Hardware Lab">
+                <p>This lab offers practical learning on computer hardware, LAN setup, routers, and real-time network troubleshooting.</p>
+            </div>
+            <div class="lab-card">
+                <h5>AI & ML Lab</h5>
+                <img src="https://i.ibb.co/fYSfDfT/ai-lab.jpg" alt="AI Lab">
+                <p>Dedicated to Artificial Intelligence and Machine Learning projects with high-performance systems and Python frameworks like TensorFlow and Keras.</p>
+            </div>
+        </div>
+
+        <!-- Faculty Section -->
+        <div id="facultySection" class="faculty-section">
+            <h4 class="section-title mt-5">Our Faculty</h4>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <img src="Image/oop.jpg" alt="Faculty 1" />
+                    <h6>Vaishnavi Shinde</h6>
+                    <small>M.Tech in Computer Engineering</small>
+                </div>
+                <div class="faculty-card">
+                    <img src="Image/java.jpg" alt="Faculty 2" />
+                    <h6>Varsha Mali</h6>
+                    <small>M.E in Information Technology</small>
+                </div>
+                <div class="faculty-card">
+                    <img src="Image/chavan.jpg" alt="Faculty 3" />
+                    <h6>Kiran Chavan</h6>
+                    <small>M.Tech in AI & ML</small>
+                </div>
+                <div class="faculty-card">
+                    <img src="Image/ui.jpg" alt="Faculty 4" />
+                    <h6>Rutuja Ganakwar</h6>
+                    <small>M.E in Computer Science</small>
+                </div>
+                <div class="faculty-card">
+                    <img src="https://i.ibb.co/8BvXVk7/teacher.jpg" alt="Faculty 5" />
+                    <h6>Tejaswi Dawkhar</h6>
+                    <small>M.Tech in Data Science</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Syllabus Section -->
+        <div id="syllabusSection" class="syllabus-section">
+            <h4 class="section-title mt-5">Syllabus (As per MSBTE K-Scheme)</h4>
+
+            <div class="syllabus-box">
+                <h5>1st Semester</h5>
+                <ul>
+                    <li>Basic Science</li>
+                    <li>Basic Mathematics</li>
+                    <li>Computer Fundamentals</li>
+                    <li>English</li>
+                    <li>Engineering Graphics</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-box">
+                <h5>2nd Semester</h5>
+                <ul>
+                    <li>Fundamentals of ICT</li>
+                    <li>Programming in C</li>
+                    <li>Communication Skills</li>
+                    <li>Applied Physics</li>
+                    <li>Workshop Practices</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-box">
+                <h5>3rd Semester</h5>
+                <ul>
+                    <li>Data Structures</li>
+                    <li>Digital Techniques</li>
+                    <li>Database Management Systems</li>
+                    <li>OOP using C++</li>
+                    <li>Environmental Studies</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-box">
+                <h5>4th Semester</h5>
+                <ul>
+                    <li>Operating Systems</li>
+                    <li>Java Programming</li>
+                    <li>Computer Networks</li>
+                    <li>Software Engineering</li>
+                    <li>Professional Practices</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-box">
+                <h5>5th Semester</h5>
+                <ul>
+                    <li>Web Programming</li>
+                    <li>Microcontroller and Applications</li>
+                    <li>Network Security</li>
+                    <li>Data Communication</li>
+                    <li>Project Work Phase I</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-box">
+                <h5>6th Semester</h5>
+                <ul>
+                    <li>Mobile Application Development</li>
+                    <li>Cloud Computing</li>
+                    <li>Advanced Java</li>
+                    <li>Project Work Phase II</li>
+                    <li>Industrial Training / Seminar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        &copy; 2025 ICEEM College. All rights reserved.
+    </footer>
+</body>
+</html>
